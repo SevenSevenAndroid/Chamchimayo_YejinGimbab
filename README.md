@@ -77,3 +77,5 @@ binding.btnMore.setOnClickListener(){
             transaction.commit()
 ```
 위와 같은 코드를 HomeActivity에 추가하였다.
+
+![Screenshot_20210425-135256_Se1_hw](https://user-images.githubusercontent.com/80473521/115981424-99604000-a5ce-11eb-8ff4-1dabe69c326f.jpg)
