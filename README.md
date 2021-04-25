@@ -79,3 +79,4 @@ binding.btnMore.setOnClickListener(){
 위와 같은 코드를 HomeActivity에 추가하였다.
 
 ![Screenshot_20210425-135256_Se1_hw](https://user-images.githubusercontent.com/80473521/115981424-99604000-a5ce-11eb-8ff4-1dabe69c326f.jpg)
+![Screenshot_20210425-135312_Se1_hw](https://user-images.githubusercontent.com/80473521/115981442-c57bc100-a5ce-11eb-94a5-64c47e17c7bd.jpg)
