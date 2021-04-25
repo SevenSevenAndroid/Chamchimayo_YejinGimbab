@@ -1,4 +1,4 @@
-##### 1. 구현방법
+#### 1. 구현방법
 - 2차 세미나에서 배운 내용을 바탕으로 FollowingRepo.kt, FollowingRepoAdapter.kt, FollowingRepoFragment.kt, RepoInfoActivity.kt 등의 파일들을 
 만들어 코드를 작성하였다. 
 - 먼저 부분 화면 Fragment를 만들어 ist로 구현해 화면으로 보여주기 위해 item_repo.xml을 만들어 
