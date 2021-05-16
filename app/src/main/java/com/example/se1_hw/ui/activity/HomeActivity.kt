@@ -1,9 +1,12 @@
-package com.example.se1_hw
+package com.example.se1_hw.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.se1_hw.R
 import com.example.se1_hw.databinding.ActivityHomeBinding
+import com.example.se1_hw.ui.fragment.FollowingListFragment
+import com.example.se1_hw.ui.fragment.FollowingRepoFragment
 
 class HomeActivity : AppCompatActivity() {
     lateinit var binding: ActivityHomeBinding

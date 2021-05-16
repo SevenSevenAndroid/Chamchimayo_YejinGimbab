@@ -1,11 +1,13 @@
-package com.example.se1_hw
+package com.example.se1_hw.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.se1_hw.data.following.FollowingUserInfo
 import com.example.se1_hw.databinding.FragmentFollowingListBinding
+import com.example.se1_hw.ui.adapter.FollowingListAdapter
 
 
 class FollowingListFragment: Fragment() {
@@ -40,22 +42,22 @@ class FollowingListFragment: Fragment() {
 
         followingListAdapter.userList.addAll(
             listOf<FollowingUserInfo>(
-                FollowingUserInfo(
-                    userImage = "지금은 빈칸",
-                    userName = "cyj2825"
-                ),
-                FollowingUserInfo(
-                    userImage = "지금은 빈칸",
-                    userName = "1"
-                ),
-                FollowingUserInfo(
-                    userImage = "지금은 빈칸",
-                    userName = "2"
-                ),
-                FollowingUserInfo(
-                    userImage = "지금은 빈칸",
-                    userName = "3"
-                )
+                    FollowingUserInfo(
+                            userImage = "지금은 빈칸",
+                            userName = "cyj2825"
+                    ),
+                    FollowingUserInfo(
+                            userImage = "지금은 빈칸",
+                            userName = "1"
+                    ),
+                    FollowingUserInfo(
+                            userImage = "지금은 빈칸",
+                            userName = "2"
+                    ),
+                    FollowingUserInfo(
+                            userImage = "지금은 빈칸",
+                            userName = "3"
+                    )
             )
         )
         followingListAdapter.notifyDataSetChanged()

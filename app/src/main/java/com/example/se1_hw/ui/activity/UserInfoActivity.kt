@@ -1,9 +1,10 @@
-package com.example.se1_hw
+package com.example.se1_hw.ui.activity
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.se1_hw.R
 import com.example.se1_hw.databinding.ActivityUserInfoBinding
+import com.example.se1_hw.ui.fragment.FollowingListFragment
 
 class UserInfoActivity:AppCompatActivity() {
     private lateinit var binding: ActivityUserInfoBinding
