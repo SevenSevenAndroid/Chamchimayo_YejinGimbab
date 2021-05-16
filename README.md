@@ -10,13 +10,14 @@
 <img width="650" alt="sopt2" src="https://user-images.githubusercontent.com/80473521/118395632-53a30e80-b686-11eb-95da-1c1a0113e378.PNG">
 
 ### * 로그인 완료 구현
-![hw1](https://user-images.githubusercontent.com/80473521/118396990-feb6c680-b68c-11eb-887c-3aba41401e76.jpg)
-![hw2](https://user-images.githubusercontent.com/80473521/118396991-ff4f5d00-b68c-11eb-9270-ec80d35afb61.jpg)
+
+![hw1](https://user-images.githubusercontent.com/80473521/118397158-9fa58180-b68d-11eb-89cc-160ebcfdd233.jpg)
 
 
 ### * 회원가입 완료 구현
-![hw3](https://user-images.githubusercontent.com/80473521/118396988-fd859980-b68c-11eb-8954-3613886ccdd4.jpg)
-![hw4](https://user-images.githubusercontent.com/80473521/118396989-feb6c680-b68c-11eb-9f08-1dbbef8ed71c.jpg)
+
+![hw3](https://user-images.githubusercontent.com/80473521/118397159-9fa58180-b68d-11eb-963f-f39b363413e8.jpg)
+![hw4](https://user-images.githubusercontent.com/80473521/118397157-9f0ceb00-b68d-11eb-95e0-4006a5d225ca.jpg)
 
 ### * Retrofit Interface
 ```kotlin
