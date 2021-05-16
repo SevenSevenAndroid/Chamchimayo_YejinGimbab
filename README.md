@@ -10,10 +10,13 @@
 <img width="650" alt="sopt2" src="https://user-images.githubusercontent.com/80473521/118395632-53a30e80-b686-11eb-95da-1c1a0113e378.PNG">
 
 ### * 로그인 완료 구현
+![hw1](https://user-images.githubusercontent.com/80473521/118396990-feb6c680-b68c-11eb-887c-3aba41401e76.jpg)
+![hw2](https://user-images.githubusercontent.com/80473521/118396991-ff4f5d00-b68c-11eb-9270-ec80d35afb61.jpg)
 
 
 ### * 회원가입 완료 구현
-
+![hw3](https://user-images.githubusercontent.com/80473521/118396988-fd859980-b68c-11eb-8954-3613886ccdd4.jpg)
+![hw4](https://user-images.githubusercontent.com/80473521/118396989-feb6c680-b68c-11eb-9f08-1dbbef8ed71c.jpg)
 
 ### * Retrofit Interface
 ```kotlin
@@ -98,4 +101,4 @@ val requestSignUpData = RequestSignUpData(
                 }
 ```
 ### * 배운 점 및 성장한 점
-- 세미나를 듣고 과제를 하면서 직접 서버 통신을 해볼 수 있어 한 층 더 성장할 수 있었던 것 같습니다. 어떻게 로그인, 회원가입 통신을 구현할 수 있을지 하나하나 자세하게 배우며 직접 코딩해보니 쉽지는 않았지만 재미있고 흥미를 느꼈습니다. 
+- 세미나를 듣고 과제를 하면서 직접 서버 통신을 해볼 수 있어 한 층 더 성장할 수 있었던 것 같습니다. 어떻게 로그인, 회원가입 통신을 구현할 수 있을지 하나하나 자세하게 배우며 직접 코딩해보니 쉽지는 않았지만 재미있고 흥미를 느꼈습니다. 더 잘 이해하고 사용하기 위해서 더 열심히 공부하겠습니다!
