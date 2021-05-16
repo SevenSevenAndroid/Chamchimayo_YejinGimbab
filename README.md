@@ -53,7 +53,7 @@ object ServiceCreator {
 
 
 ### * callback
-- SignIn
+- Login
 ```kotlin
 val requestLoginData = RequestLoginData(
                     id = binding.idedit.text.toString(),
