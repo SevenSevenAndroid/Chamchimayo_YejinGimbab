@@ -13,6 +13,22 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         Log.d("onCreate", "onCreate(run)")
         setContentView(binding.root)
+
+        val repoFragment = FollowingRepoFragment()
+        val manager = supportFragmentManager
+        val transaction = manager.beginTransaction()
+        transaction.replace(R.id.fragment_container,repoFragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
+
+        binding.btnMore.setOnClickListener(){
+            val infoFragment = FollowingListFragment()
+            val manager = supportFragmentManager
+            val transaction = manager.beginTransaction()
+            transaction.replace(R.id.fragment_container,infoFragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
     }
     override fun onStart() {
         super.onStart()

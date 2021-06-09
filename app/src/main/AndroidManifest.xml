@@ -11,8 +11,12 @@
         android:theme="@style/Theme.Se1_hw">
         <activity android:name=".SignUpActivity"></activity>
         <activity android:name=".HomeActivity" />
-        <activity android:name=".UserInfoActivity"/>
+        <activity android:name=".RepoInfoActivity">
 
+        </activity>
+        <activity android:name=".UserInfoActivity">
+
+        </activity>
 
         <activity android:name=".SignInActivity">
             <intent-filter>

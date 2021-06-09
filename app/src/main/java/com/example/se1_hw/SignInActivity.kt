@@ -9,8 +9,7 @@ import android.widget.Toast
 import com.example.se1_hw.databinding.ActivityMainBinding
 
 class SignInActivity : AppCompatActivity() {
-    lateinit var binding:ActivityMainBinding
-    private val REQUEST_CODE = 100
+    private lateinit var binding:ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +17,7 @@ class SignInActivity : AppCompatActivity() {
         Log.d("onCreate", "onCreate(run)")
         setContentView(binding.root)
         initButtonClickEvent()
-        inittextClickEvent()
+        initTextClickEvent()
     }
     private fun initButtonClickEvent() {
         binding.button.setOnClickListener{
@@ -42,14 +41,13 @@ class SignInActivity : AppCompatActivity() {
 
         }
     }
-    private fun inittextClickEvent(){
+    private fun initTextClickEvent(){
         binding.signup.setOnClickListener{
             val intent = Intent(this@SignInActivity, SignUpActivity::class.java)
             startActivityForResult(intent,REQUEST_CODE)
         }
     }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?){
         super.onActivityResult(requestCode, resultCode, data)
         if(requestCode == REQUEST_CODE){
             if(resultCode == Activity.RESULT_OK){
@@ -57,6 +55,10 @@ class SignInActivity : AppCompatActivity() {
                 binding.passedit.setText(data!!.getStringExtra("password"))
             }
         }
+    }
+
+    companion object{
+        private const val REQUEST_CODE = 100
     }
 
     override fun onStart() {
