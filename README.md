@@ -1,20 +1,50 @@
-#### 1. 구현방법
-- 2차 세미나에서 배운 내용을 바탕으로 FollowingRepo.kt, FollowingRepoAdapter.kt, FollowingRepoFragment.kt, RepoInfoActivity.kt 등의 파일들을 
-만들어 코드를 작성하였다. 
-- 먼저 부분 화면 Fragment를 만들어 ist로 구현해 화면으로 보여주기 위해 item_repo.xml을 만들어 
+# ![마크업 이미지3](https://user-images.githubusercontent.com/80473521/118394517-1e93bd80-b680-11eb-9fb1-a14cb453e3ba.jpg) Seventh Seminar Assignment ![마크업 이미지3](https://user-images.githubusercontent.com/80473521/118394517-1e93bd80-b680-11eb-9fb1-a14cb453e3ba.jpg)
+
+
+## ![마크업 이미지1](https://user-images.githubusercontent.com/80473521/118394520-1fc4ea80-b680-11eb-9641-df4063f3f257.jpg) 로그인, 회원가입 통신 구현하기
+
+### * 자동 로그인 구현하기
+1) SignInActivity로 처음 들어왔을 때 SharedPreference에서 ID/PW가 있다면? 로그인 과정을 건너뛴다.
+2) 로그인할 때 성공하면 SharedPreference에 집어 넣는다.
+3) 서비스에서 로그아웃하면 SharedPreference를 clear한다.
+
+result => 위와 같은 과정으로 자동 로그인처럼 구현할 수 있다.
+
+#### 1. Lv1-1 Activity에서 어떻게 처리했는지 정리
+< SignInActivity 코드 정리 >
 ```kotlin
-<TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:ellipsize="end"
-        android:layout_marginHorizontal="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="레포지터리 이름" />
+ override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        searchUserAuthStorage()
+        loginButtonEvent()
+        signUpResult()
+    }
+    private fun searchUserAuthStorage() {
+        with(SoptUserAuthStorage.getInstance(this)) {
+            if (hasUserData()) {
+                requestLogin(getUserData().let { RequestLoginData(it.id, it.password) })
+            }
+        }
+    }
+
+    private fun loginButtonEvent() {
+        binding.button.setOnClickListener{
+            val requestLoginData = RequestLoginData(
+                    id = binding.idedit.text.toString(),
+                    password = binding.passedit.text.toString()
+            )
+            requestLogin(requestLoginData)
+        }
+    }
+    private fun signUpResult() {
+        binding.signup.setOnClickListener {
+            signUpActivityLauncher.launch(
+                Intent(this, SignUpActivity::class.java)
+            )
+        }
+    }
 ```
 이와 같은 3개의 TextView를 생성하였다. 레포지터리 이름과 레포지터리 설명이 너무 긴경우 ...이 나오도록 
 ```kotlin
@@ -77,6 +107,3 @@ binding.btnMore.setOnClickListener(){
             transaction.commit()
 ```
 위와 같은 코드를 HomeActivity에 추가하였다.
-
-![Screenshot_20210425-135256_Se1_hw](https://user-images.githubusercontent.com/80473521/115981424-99604000-a5ce-11eb-8ff4-1dabe69c326f.jpg)
-![Screenshot_20210425-135312_Se1_hw](https://user-images.githubusercontent.com/80473521/115981442-c57bc100-a5ce-11eb-94a5-64c47e17c7bd.jpg)
