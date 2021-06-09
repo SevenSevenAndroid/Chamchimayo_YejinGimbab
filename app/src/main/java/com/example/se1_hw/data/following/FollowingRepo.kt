@@ -1,4 +1,4 @@
-package com.example.se1_hw
+package com.example.se1_hw.data.following
 
 data class FollowingRepo(
     val repotext1: String,

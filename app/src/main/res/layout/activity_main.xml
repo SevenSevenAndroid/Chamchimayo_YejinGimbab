@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginRight="32dp"
     android:layout_marginLeft="32dp"
-    tools:context=".SignInActivity">
+    tools:context=".ui.activity.SignInActivity">
 
     <TextView
         android:id="@+id/idview"

@@ -1,4 +1,4 @@
-package com.example.se1_hw
+package com.example.se1_hw.data.following
 
 data class FollowingUserInfo (
     val userImage: String,

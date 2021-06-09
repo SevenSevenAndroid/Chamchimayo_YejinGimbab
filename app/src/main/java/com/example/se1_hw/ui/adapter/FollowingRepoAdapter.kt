@@ -1,8 +1,9 @@
-package com.example.se1_hw
+package com.example.se1_hw.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.se1_hw.data.following.FollowingRepo
 import com.example.se1_hw.databinding.ItemRepoBinding
 
 class FollowingRepoAdapter : RecyclerView.Adapter<FollowingRepoAdapter.FollowingRepoViewHolder>() {
